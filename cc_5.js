@@ -14,3 +14,12 @@ let order = {orderId: 12345, totalAmount: 150, status: "Processing",
         console.log(`Order Status: ${order.status}`)}
     };
     order.displayOrder()
+
+//Task 3
+let cartItems = ["Top", "Skirt", "Jeans"]
+cartItems.push("Shorts"); // adding new item
+cartItems.pop(); //removing last item
+cartItems.unshift("Pink Socks"); //adding new item to beginning
+cartItems.shift(); //removing first item
+//Logging final array
+console.log(`Cart Details: ${cartItems}`);
