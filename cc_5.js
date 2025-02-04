@@ -67,3 +67,8 @@ const applyDiscount =  function (price, discountPercent) {
 }
 let discountedPrice = applyDiscount(300, 20)
 console.log(`Price after Discount: $${discountedPrice}`);
+
+//Task 10 
+const calculatePoints= purchaseAmount => purchaseAmount/ 10
+let points = calculatePoints(240)
+console.log(`Points Earned: ${points}`);
