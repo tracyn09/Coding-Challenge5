@@ -23,3 +23,10 @@ cartItems.unshift("Pink Socks"); //adding new item to beginning
 cartItems.shift(); //removing first item
 //Logging final array
 console.log(`Cart Details: ${cartItems}`);
+
+//Task 4 
+let prices = [100,200,300]
+//Appying 10% discount using map()
+let discountedPrices = prices.map(price => price * .9);
+//New discounted prices
+console.log(`Discounted Prices: ${discountedPrices}`);
