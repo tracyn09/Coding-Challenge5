@@ -53,3 +53,10 @@ console.log(`Total Revenue : $${sales.reduce((a,b) => a + b, 0)}`); //calculatin
 //Task 7 
 let customers = ["Alice", "Bob", "Charlie", "David"]
 console.log(`Customer Search Results: ${customers.find(customers => customers === "Charlie")}`);
+
+//Task 8 
+const calculateTax =  function (amount,taxRate) {
+    return amount * taxRate
+}
+let tax = calculateTax(300, .10);
+console.log(`Calculated Tax: $${tax}`);
