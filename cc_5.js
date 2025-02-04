@@ -60,3 +60,10 @@ const calculateTax =  function (amount,taxRate) {
 }
 let tax = calculateTax(300, .10);
 console.log(`Calculated Tax: $${tax}`);
+
+//Task 9
+const applyDiscount =  function (price, discountPercent) {
+    return price - (price *discountPercent/100)
+}
+let discountedPrice = applyDiscount(300, 20)
+console.log(`Price after Discount: $${discountedPrice}`);
