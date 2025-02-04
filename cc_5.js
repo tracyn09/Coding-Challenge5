@@ -48,4 +48,8 @@ console.log(`Inventory: ${inventory.filter((stockQuantity => stockQuantity>0))}`
 
 //Task 6 
 let sales = [150,200,350,250]
-console.log(sales.reduce((a,b) => a + b, 0)); //calculating and logging total revenue 
+console.log(`Total Revenue : $${sales.reduce((a,b) => a + b, 0)}`); //calculating and logging total revenue 
+
+//Task 7 
+let customers = ["Alice", "Bob", "Charlie", "David"]
+console.log(`Customer Search Results: ${customers.find(customers => customers === "Charlie")}`);
