@@ -30,3 +30,18 @@ let prices = [100,200,300]
 let discountedPrices = prices.map(price => price * .9);
 //New discounted prices
 console.log(`Discounted Prices: ${discountedPrices}`);
+
+//Task 5
+let inventory = [4,19,3,0,29]
+//Filter(): removing 0 stock products
+function filter (array,test) {
+    let passed = [];
+    for (let element of array) {
+        if (test(element)) {
+            passed.push(element);
+        }
+    }
+    return passed;
+}
+//Logging filtered array
+console.log(`Inventory: ${inventory.filter((stockQuantity => stockQuantity>0))}`);
